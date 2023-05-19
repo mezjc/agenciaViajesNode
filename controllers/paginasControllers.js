@@ -14,7 +14,7 @@ const paginaInicio = async(req, res) => {
     const resultado = await Promise.all(promiseDB);
 
       //req = lo que enviamos : res = lo que express nos responde
-  res.render("Inicio", {
+  res.render("inicio", {
     pagina: "Inicio",
     clase: "home",
     viajes: resultado[0],
